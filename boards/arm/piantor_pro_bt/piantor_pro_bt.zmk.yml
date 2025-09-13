@@ -14,3 +14,6 @@ url: https://keebart.com/products/piantor-wireless
 siblings:
   - piantor_pro_bt_left
   - piantor_pro_bt_right
+  - piantor_pro_bt_left_peripheral
+  - corne_dongle_xiao
+  - corne_dongle_pro_micro
