@@ -1,41 +1,60 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-if BOARD_PIANTOR_PRO_BT_LEFT
+if BOARD_PIANTOR_PRO_BT_LEFT || SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
 
 config ZMK_KEYBOARD_NAME
-	default "Piantor Pro BT"
+    default "Piantor Pro BT"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif # BOARD_PIANTOR_PRO_BT_LEFT
+# if SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
 
-if BOARD_PIANTOR_PRO_BT_LEFT || BOARD_PIANTOR_PRO_BT_RIGHT
+# config ZMK_USB
+#     default y
 
-config BOARD
-    default "piantor_pro_bt"
+# endif
+
+endif
+
+if BOARD_PIANTOR_PRO_BT_LEFT || BOARD_PIANTOR_PRO_BT_RIGHT || BOARD_PIANTOR_PRO_BT_LEFT_PERIPHERAL || SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
 
 config ZMK_SPLIT
     default y
 
-if USB
-
-config USB_NRFX
-	default y
-
-config USB_DEVICE_STACK
-	default y
-
-endif # USB
-
-config BT_CTLR
-	default BT
+if ZMK_DISPLAY
 
 config I2C
-	default y
-
-config ZMK_MAX17048
     default y
+
+config SSD1306
+    default y
+
+if SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
+
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
+
+endif
+
+endif # ZMK_DISPLAY
+
+if LVGL
+
+config LV_Z_VDB_SIZE
+    default 64
+
+config LV_DPI_DEF
+    default 148
+
+config LV_Z_BITS_PER_PIXEL
+    default 1
+
+choice LV_COLOR_DEPTH
+    default LV_COLOR_DEPTH_1
+endchoice
+
+endif # LVGL
+
+endif
 
 endif # BOARD_PIANTOR_PRO_BT_LEFT || BOARD_PIANTOR_PRO_BT_RIGHT
