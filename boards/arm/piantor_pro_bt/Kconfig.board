@@ -8,3 +8,19 @@ config BOARD_PIANTOR_PRO_BT_LEFT
 config BOARD_PIANTOR_PRO_BT_RIGHT
     bool "Piantor Pro BT Right"
     depends on SOC_NRF52840_QIAA
+
+config BOARD_PIANTOR_PRO_BT_LEFT
+    def_bool $(shields_list_contains,Piantor_Pro_BT_Left)
+    depends on SOC_NRF52840_QIAA
+
+config BOARD_PIANTOR_PRO_BT_RIGHT
+    def_bool $(shields_list_contains,Piantor_Pro_BT_Right)
+
+config SHIELD_CORNE_DONGLE_XIAO
+    def_bool $(shields_list_contains,corne_dongle_xiao)
+
+config BOARD_PIANTOR_PRO_BT_LEFT_PERIPHERAL
+    def_bool $(shields_list_contains,Piantor_Pro_BT_Left_peripheral)
+
+config SHIELD_CORNE_DONGLE_PRO_MICRO
+    def_bool $(shields_list_contains,corne_dongle_pro_micro)
