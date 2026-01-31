@@ -8,3 +8,5 @@ config BOARD_PIANTOR_PRO_BT_LEFT
 config BOARD_PIANTOR_PRO_BT_RIGHT
     bool "Piantor Pro BT Right"
     depends on SOC_NRF52840_QIAA
+
+CONFIG_ZMK_POINTING=y
