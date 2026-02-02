@@ -147,7 +147,7 @@
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&sk LCTRL>, <&num_word 2>;
         };
     };
@@ -158,14 +158,14 @@
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&sk LSHIFT>, <&caps_word>;
         };
 
         layerzero: layerzero {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&kt Y>, <&mo 0>;
 
             label = "LAYERZERO";
