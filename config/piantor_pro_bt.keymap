@@ -170,35 +170,35 @@
         compatible = "zmk,keymap";
 
         Base {
-            display-name = "Base";
+            display-name = "B_______";
             bindings = <
 &none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp PRINTSCREEN  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &mt LPAR J  &mt RPAR K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &to 0  &none  &none  &td0  &td1  &sym_word 4  &num_word 2  &none
             >;
         };
 
         nav_layer {
-            display-name = "muovi fun";
+            display-name = "____NA__";
             bindings = <
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &kp PG_UP  &kp LEFT  &kp UP  &kp RIGHT  &kp PG_DN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN  &trans  &trans
             >;
         };
 
         num_layer {
-            display-name = "numeri";
+            display-name = "__NU____";
             bindings = <
 &trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt ASTRK SLASH  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &mt PLUS MINUS  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt EQUAL ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &none  &kp COMMA  &kp KP_N0  &trans  &trans  &trans
             >;
         };
 
         mau_layer {
-            display-name = "mouse";
+            display-name = "M______E";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &msc SCRL_UP  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN  &trans  &trans
             >;
         };
 
         sym_layer {
-            display-name = "simmedia";
+            display-name = "_______S";
             bindings = <
 &trans  &kp POUND  &kp DLLR  &mt AMPERSAND BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &trans  &kp SEMI  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_PP  &bt BT_SEL 0  &trans  &kp COLON  &kp EXCL  &kp UNDER  &Passfirma  &none  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1  &trans  &kp AT  &kp F4  &kp F2  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
