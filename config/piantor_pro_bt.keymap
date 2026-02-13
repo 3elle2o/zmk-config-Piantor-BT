@@ -200,7 +200,7 @@
         sym_layer {
             display-name = "_______S";
             bindings = <
-&trans  &kp POUND  &kp DLLR  &mt AMPERSAND BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &trans  &kp SEMI  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_PP  &bt BT_SEL 0  &trans  &kp COLON  &kp EXCL  &kp UNDER  &Passfirma  &none  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1  &trans  &kp AT  &kp F4  &kp F2  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp POUND  &kp DLLR  &mt AMPERSAND BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &trans  &kp SEMI  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_PP  &bt BT_NXT  &trans  &kp COLON  &kp EXCL  &kp UNDER  &Passfirma  &none  &trans  &trans  &trans  &trans  &trans  &bt BT_PRV  &trans  &kp AT  &kp F4  &kp F2  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
