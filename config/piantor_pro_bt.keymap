@@ -17,6 +17,8 @@
 
 &num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT BSPC>; };
 
+&caps_word { continue-list = <SPACE BSPC>; };
+
 &mt {
     tapping-term-ms = <130>; // This is the value already set by default
 };
@@ -112,19 +114,25 @@
             bindings = <&kp TAB>;
         };
 
-        combo_maus {
+        combo_nav {
             timeout-ms = <50>;
             key-positions = <19 31>;
             bindings = <&nav_word 1>;
         };
 
-        combo_nav {
+        combo_dquote {
             timeout-ms = <50>;
             key-positions = <19 18>;
             bindings = <&kp DOUBLE_QUOTES>;
         };
 
-        combo_grave {
+        combo_maiusc {
+            timeout-ms = <50>;
+            key-positions = <4 16>;
+            bindings = <&caps_word>;
+        };
+
+        combo_mau {
             timeout-ms = <50>;
             key-positions = <16 28>;
             bindings = <&mau_word 3>;
