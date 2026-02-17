@@ -116,7 +116,12 @@
 
         apostrofo {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <8 20>;
+            key-positions = <30 31>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <19 18>;
         };
     };
 };
