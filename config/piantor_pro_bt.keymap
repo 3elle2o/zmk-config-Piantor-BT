@@ -190,7 +190,7 @@
         layer_5 {
             display-name = "__0000000";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &mau_word 3 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &caps_word 2  &nav_word 1  &num_word  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &mau_word 3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &caps_word 2  &nav_word 1  &num_word  &trans  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &to 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
