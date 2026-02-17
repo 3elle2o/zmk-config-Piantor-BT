@@ -123,7 +123,7 @@
         };
 
         mouse {
-            bindings = <&mau_word>;
+            bindings = <&mau_word 3>;
             key-positions = <5 40>;
         };
     };
