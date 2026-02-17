@@ -143,7 +143,7 @@
         };
 
         base {
-            bindings = <&nav_word 1>;
+            bindings = <&to 1>;
             key-positions = <17 40>;
         };
     };
