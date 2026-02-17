@@ -128,7 +128,7 @@
         };
 
         num {
-            bindings = <&num_word>;
+            bindings = <&num_word 2>;
             key-positions = <15 40>;
         };
 
