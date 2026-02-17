@@ -189,7 +189,7 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &mau_word  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &nav_word  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &mau_word  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &caps_word  &nav_word  &num_word  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
