@@ -114,39 +114,9 @@
             bindings = <&kp TAB>;
         };
 
-        combo_nav {
-            timeout-ms = <50>;
-            key-positions = <19 31>;
-            bindings = <&nav_word 1>;
-        };
-
-        combo_dquote {
-            timeout-ms = <50>;
-            key-positions = <19 18>;
-            bindings = <&kp DOUBLE_QUOTES>;
-        };
-
-        combo_maiusc {
-            timeout-ms = <50>;
-            key-positions = <4 16>;
-            bindings = <&caps_word>;
-        };
-
-        combo_mau {
-            timeout-ms = <50>;
-            key-positions = <16 28>;
-            bindings = <&mau_word 3>;
-        };
-
         apostrofo {
             bindings = <&kp APOSTROPHE>;
             key-positions = <8 20>;
-        };
-
-        combo_base {
-            timeout-ms = <50>;
-            key-positions = <30 31>;
-            bindings = <&to 0>;
         };
     };
 };
