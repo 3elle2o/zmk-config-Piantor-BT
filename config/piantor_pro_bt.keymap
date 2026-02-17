@@ -122,9 +122,29 @@
             key-positions = <19 18>;
         };
 
-        mouse {
-            bindings = <&mau_word 3>;
-            key-positions = <5 40>;
+        maius {
+            bindings = <&caps_word>;
+            key-positions = <16 40>;
+        };
+
+        num {
+            bindings = <&num_word>;
+            key-positions = <15 40>;
+        };
+
+        nav {
+            bindings = <&nav_word 1>;
+            key-positions = <14 40>;
+        };
+
+        mou {
+            bindings = <&nav_word 1>;
+            key-positions = <13 40>;
+        };
+
+        base {
+            bindings = <&nav_word 1>;
+            key-positions = <17 40>;
         };
     };
 };
@@ -158,7 +178,7 @@
         Base {
             display-name = "0_______";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp PRINTSCREEN  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &mt LPAR J  &mt RPAR K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp C_PP  &none  &none  &td0  &td1  &sym_word 4  &kp CARET  &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp PRINTSCREEN  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &mt LPAR J  &mt RPAR K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp C_PP  &none  &none  &td0  &td1  &sym_word 4  &sk CARET  &none
             >;
         };
 
