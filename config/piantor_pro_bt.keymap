@@ -1,4 +1,4 @@
-/*
+dc/*
  * Copyright (c) 2021-2022 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -124,22 +124,22 @@
 
         maius {
             bindings = <&caps_word>;
-            key-positions = <16 28>;
+            key-positions = <16 48>;
         };
 
         num {
             bindings = <&num_word 2>;
-            key-positions = <15 27>;
+            key-positions = <15 3>;
         };
 
         nav {
             bindings = <&nav_word 1>;
-            key-positions = <19 31>;
+            key-positions = <19 7>;
         };
 
         mou {
             bindings = <&mau_word 3>;
-            key-positions = <20 32>;
+            key-positions = <20 8>;
         };
     };
 };
