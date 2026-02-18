@@ -163,7 +163,7 @@
         nav_layer {
             display-name = "______00";
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &kp PG_UP  &kp LEFT  &kp UP  &kp RIGHT  &kp PG_DN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN  &trans  &trans
+&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp DEL  &kp PG_UP  &kp LEFT  &kp UP  &kp RIGHT  &kp PG_DN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN  &trans  &trans
             >;
         };
 
