@@ -138,13 +138,8 @@
         };
 
         mou {
-            bindings = <&nav_word 1>;
+            bindings = <&mau_word 1>;
             key-positions = <20 32>;
-        };
-
-        base {
-            bindings = <&to 1>;
-            key-positions = <17 40>;
         };
     };
 };
