@@ -53,6 +53,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LCTRL &kp LALT &kp C>;
+        };
 
         Notion: Notion {
             compatible = "zmk,behavior-macro";
