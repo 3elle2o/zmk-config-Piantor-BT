@@ -145,6 +145,7 @@
         base {
             bindings = <&to 0>;
             key-positions = <18 30>;
+        };
 
         programmi {
             bindings = <&sl 5>;
@@ -153,7 +154,7 @@
     };
 };
 
-/{
+/ {
     keymap {
         compatible = "zmk,keymap";
 
