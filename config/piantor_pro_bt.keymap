@@ -146,8 +146,8 @@
             bindings = <&to 0>;
             key-positions = <18 30>;
 
-        base {
-            bindings = <&sk 5>;
+        programmi {
+            bindings = <&sl 5>;
             key-positions = <17 29>;
         };
     };
