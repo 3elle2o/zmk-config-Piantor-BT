@@ -132,12 +132,12 @@
             key-positions = <15 14 16>;
         };
 
-        nav {
+        mou {
             bindings = <&mau_word>;
             key-positions = <26 27 28>;
         };
 
-        mou {
+        nav {
             bindings = <&nav_word>;
             key-positions = <31 32 33>;
         };
