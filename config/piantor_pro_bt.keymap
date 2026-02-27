@@ -145,6 +145,10 @@
         base {
             bindings = <&to 0>;
             key-positions = <18 30>;
+
+        base {
+            bindings = <&sk 5>;
+            key-positions = <17 29>;
         };
     };
 };
@@ -185,6 +189,13 @@
             display-name = "++SYM++";
             bindings = <
 &trans  &kp POUND  &kp DLLR  &kp BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &kp AMPS  &kp SEMI  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_PLAY_PAUSE  &bt BT_NXT  &kp DQT  &kp COLON  &kp EXCL  &kp UNDER  &Passfirma  &none  &trans  &trans  &trans  &trans  &trans  &bt BT_PRV  &kp SLASH  &kp AT  &kp F4  &kp F2  &kp K_CALC  &none  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        program_layer {
+            display-name = "PROGRAMMI";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &Gmail  &Calendar  &Todoist  &Notion  &Firma  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
