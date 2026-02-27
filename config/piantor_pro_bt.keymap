@@ -40,31 +40,31 @@
         Gmail: Gmail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LALT &kp Z>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp Z>;
         };
 
         Calendar: Calendar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LALT &kp X>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp X>;
         };
 
         Todoist: Todoist {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LALT &kp C>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp C>;
         };
 
         Notion: Notion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LALT &kp V>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp V>;
         };
 
         Firma: Firma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp LALT &kp B>;
+            bindings = <&kp LCTRL &kp LEFT_ALT &kp B>;
         };
     };
 };
