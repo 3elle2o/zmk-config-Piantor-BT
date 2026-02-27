@@ -133,12 +133,12 @@
         };
 
         nav {
-            bindings = <&nav_word 1>;
+            bindings = <&mau_word>;
             key-positions = <26 27 28>;
         };
 
         mou {
-            bindings = <&mau_word 3>;
+            bindings = <&nav_word>;
             key-positions = <31 32 33>;
         };
 
