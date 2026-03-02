@@ -69,6 +69,15 @@
             continue-list = <LBKT RBKT LBRC RBRC BSLH AT DLLR POUND AMPERSAND>;
             ignore-modifiers;
         };
+
+        new_shift_tab: new_shift_tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_SHIFT_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp TAB>;
+
+            tapping-term-ms = <100>;
+        };
     };
 };
 
@@ -145,14 +154,14 @@
         Base {
             display-name = "*******";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp APOSTROPHE  &none  &none  &sk LCTRL  &sk LSHIFT  &sl 4  &kp GRAVE  &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp SEMI  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp COLON  &none  &none  &kp ESC  &new_shift_tab  &sl 4  &mt APOS GRAVE  &none
             >;
         };
 
         nav_layer {
             display-name = "_____NAV";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &trans  &kp PG_DN  &trans  &trans  &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp DEL  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &trans  &kp PG_DN  &trans  &trans  &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp DEL  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -173,7 +182,7 @@
         sym_layer {
             display-name = "++SYM++";
             bindings = <
-&trans  &kp POUND  &kp DLLR  &kp BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &kp AMPS  &kp SEMI  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp DELETE  &kp DQT  &kp COLON  &kp EXCL  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp F2  &kp SLASH  &kp AT  &kp F4  &kp LPAR  &kp RPAR  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp POUND  &kp DLLR  &kp BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &kp AMPS  &kp EXCL  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp DELETE  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &bt BT_PRV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp SLASH  &kp AT  &kp F4  &kp F2  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
