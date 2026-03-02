@@ -100,26 +100,10 @@
             bindings = <&kp DEL>;
         };
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <3 4>;
-            bindings = <&kp ESC>;
-        };
-
         combo_tab {
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp TAB>;
-        };
-
-        apostrofo {
-            bindings = <&kp APOSTROPHE>;
-            key-positions = <8 9>;
-        };
-
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <7 8>;
         };
 
         maius {
@@ -161,14 +145,14 @@
         Base {
             display-name = "*******";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp PRINTSCREEN  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &sk LEFT_WIN  &none  &none  &sk LCTRL  &sk LSHIFT  &sl 4  &sk LEFT_ALT  &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &sk LEFT_WIN  &none  &none  &sk LCTRL  &sk LSHIFT  &sl 4  &mt APOS GRAVE  &none
             >;
         };
 
         nav_layer {
             display-name = "_____NAV";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &trans  &kp PG_DN  &trans  &trans  &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &trans  &kp PG_DN  &trans  &trans  &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp DEL  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -189,7 +173,7 @@
         sym_layer {
             display-name = "++SYM++";
             bindings = <
-&trans  &kp POUND  &kp DLLR  &kp BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &kp AMPS  &kp SEMI  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_PLAY_PAUSE  &bt BT_NXT  &kp DQT  &kp COLON  &kp EXCL  &kp UNDER  &Passfirma  &none  &trans  &trans  &trans  &trans  &kp F2  &bt BT_PRV  &kp SLASH  &kp AT  &kp F4  &kp LPAR  &kp RPAR  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp POUND  &kp DLLR  &kp BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &kp AMPS  &kp SEMI  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp DELETE  &kp DQT  &kp COLON  &kp EXCL  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp F2  &kp SLASH  &kp AT  &kp F4  &kp LPAR  &kp RPAR  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
