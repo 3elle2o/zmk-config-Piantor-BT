@@ -141,6 +141,16 @@
             bindings = <&to 0>;
             key-positions = <16 27>;
         };
+
+        nav {
+            bindings = <&nav_word>;
+            key-positions = <19 21>;
+        };
+
+        mou {
+            bindings = <&mau_word>;
+            key-positions = <14 16>;
+        };
     };
 };
 
@@ -151,7 +161,7 @@
         Base {
             display-name = "*******";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp PRINTSCREEN  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &lt 1 J  &lt 3 K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &sk LEFT_WIN  &none  &none  &sk LCTRL  &sk LSHIFT  &sl 4  &sk LEFT_ALT  &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp PRINTSCREEN  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &sk LEFT_WIN  &none  &none  &sk LCTRL  &sk LSHIFT  &sl 4  &sk LEFT_ALT  &none
             >;
         };
 
