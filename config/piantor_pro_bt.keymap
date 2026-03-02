@@ -161,7 +161,7 @@
         nav_layer {
             display-name = "_____NAV";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &trans  &kp PG_DN  &trans  &trans  &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp DEL  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &trans  &kp PG_DN  &trans  &trans  &trans  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -182,7 +182,7 @@
         sym_layer {
             display-name = "++SYM++";
             bindings = <
-&trans  &kp POUND  &kp DLLR  &kp BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &kp AMPS  &kp EXCL  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp DELETE  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &bt BT_PRV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp SLASH  &kp AT  &kp F4  &kp F2  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp POUND  &kp DLLR  &kp BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &kp AMPS  &kp EXCL  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &sk LEFT_WIN  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp DELETE  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &bt BT_PRV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp SLASH  &kp AT  &kp F4  &kp F2  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
