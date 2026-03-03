@@ -154,7 +154,7 @@
         Base {
             display-name = "*******";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp SEMI  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp COLON  &none  &none  &kp ESC  &kp LEFT_SHIFT  &sl 4  &mt APOS GRAVE  &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp APOS  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp GRAVE  &none  &none  &kp ESC  &kp LEFT_SHIFT  &sl 4  &kp TAB  &none
             >;
         };
 
@@ -182,7 +182,7 @@
         sym_layer {
             display-name = "++SYM++";
             bindings = <
-&trans  &kp POUND  &kp DLLR  &kp BSLH  &mt LBKT RBKT  &mt LBRC RBRC  &kp AMPS  &kp EXCL  &kp QMARK  &kp PERCENT  &Passpc  &none  &trans  &sk LEFT_WIN  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp DELETE  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &bt BT_PRV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp SLASH  &kp AT  &kp F4  &kp F2  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt POUND AMPS  &kp F2  &mt BSLH DOLLAR  &mt LBKT RBKT  &mt LBRC RBRC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &sk LEFT_WIN  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp DELETE  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &bt BT_PRV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp SLASH  &kp AT  &kp F4  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
