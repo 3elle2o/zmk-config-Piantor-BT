@@ -62,26 +62,6 @@
 };
 
 / {
-    behaviors {
-        sym_word: sym_word {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <LBKT RBKT LBRC RBRC BSLH AT DLLR POUND AMPERSAND>;
-            ignore-modifiers;
-        };
-
-        new_shift_tab: new_shift_tab {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NEW_SHIFT_TAB";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp TAB>;
-
-            tapping-term-ms = <200>;
-        };
-    };
-};
-
-/ {
     combos {
         compatible = "zmk,combos";
 
@@ -109,13 +89,7 @@
             bindings = <&kp DEL>;
         };
 
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp TAB>;
-        };
-
-        maius {
+       maius {
             bindings = <&caps_word>;
             key-positions = <19 20 21>;
         };
