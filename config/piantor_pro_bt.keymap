@@ -91,11 +91,11 @@
 
         combo_ctrl {
             timeout-ms = <50>;
-            key-positions = <24 25>;
+            key-positions = <28 29>;
             bindings = <&sk LCTRL>;
         };
 
-       maius {
+        maius {
             bindings = <&caps_word>;
             key-positions = <19 20 21>;
         };
@@ -105,24 +105,37 @@
             key-positions = <15 14 16>;
         };
 
-        base1 {
-            bindings = <&to 0>;
-            key-positions = <19 32>;
-        };
-
-        base2 {
-            bindings = <&to 0>;
-            key-positions = <16 27>;
-        };
-
         nav {
-            bindings = <&nav_word 1>;
+            bindings = <&to 0>;
             key-positions = <19 21>;
         };
 
         mou {
             bindings = <&mau_word 3>;
             key-positions = <14 16>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 17>;
+            timeout-ms = <50>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <18 19>;
+            timeout-ms = <50>;
+        };
+
+        apos {
+            bindings = <&kp APOS>;
+            key-positions = <30 31>;
+            timeout-ms = <50>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <25 26>;
         };
     };
 };
@@ -134,7 +147,7 @@
         Base {
             display-name = "*******";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp APOS  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp GRAVE  &none  &none  &kp ESC  &kp LSHIFT  &sl 4  &kp TAB  &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp LEFT_WIN  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp LEFT_ALT  &none  &none  &mau_word  &kp LSHIFT  &sl 4  &nav_word  &none
             >;
         };
 
