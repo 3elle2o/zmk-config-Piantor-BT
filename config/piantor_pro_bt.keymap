@@ -175,7 +175,7 @@
         mau_layer {
             display-name = "MA____US";
             bindings = <
-&trans  &trans  &kp DEL  &kt LEFT_SHIFT  &kp ESC  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &mkp RCLK  &mkp MCLK  &mkp LCLK  &msc SCRL_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp DEL  &kt LEFT_SHIFT  &kp ESC  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &mkp RCLK  &mkp MCLK  &mkp LCLK  &msc SCRL_UP  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_LEFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
