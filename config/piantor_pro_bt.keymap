@@ -7,6 +7,8 @@
 #include <dt-bindings/zmk/behaviors.h>
 #include <behaviors/num_word.dtsi>
 #include <behaviors/num_word.dtsi>
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
 
