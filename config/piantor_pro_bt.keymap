@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/behaviors.h>
 #include <behaviors/num_word.dtsi>
 #include <behaviors/num_word.dtsi>
-#include <interfaces/hid-trackball.dtsi>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
 
@@ -134,11 +133,6 @@
             key-positions = <26 27>;
         };
     };
-};
-
-&hid_trackball_interface {
-    automouse-layer = <3>;
-    automouse-layer-timeout-ms = <600>;
 };
 
 / {
