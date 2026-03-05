@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/urob
     - name: infely                             # new entry
       url-base: https://github.com/infely
-    - name: englmaxi
-      url-base: https://github.com/englmaxi# new entry
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -21,8 +19,5 @@ manifest:
     - name: nice-view-battery                  # new entry
       remote: infely                           # new entry
       revision: main     
-    - name: zmk-hid-trackball-interface
-      remote: englmaxi
-      revision: main# new entry
   self:
     path: config
