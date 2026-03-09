@@ -52,17 +52,6 @@
 };
 
 / {
-    behaviors {
-        mau_word: mau_word {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <SCRL_UP MOVE_LEFT MOVE_UP MOVE_DOWN MOVE_RIGHT SCRL_DOWN RCLK MCLK LCLK ESC LSHFT DEL>;
-            ignore-modifiers;
-        };
-    };
-};
-
-/ {
     combos {
         compatible = "zmk,combos";
 
