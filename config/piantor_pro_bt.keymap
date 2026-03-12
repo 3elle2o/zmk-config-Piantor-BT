@@ -37,8 +37,12 @@
             #binding-cells = <0>;
             bindings = <&kp N7 &kp N3 &kp N0 &kp N0 &kp N2 &kp N0 &kp N9 &kp N9>;
         };
+    };
+};
 
-blue: blue {
+/ {
+    macros {
+        blue: blue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
