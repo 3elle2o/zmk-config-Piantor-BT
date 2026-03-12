@@ -41,6 +41,20 @@
 };
 
 / {
+    macros {
+        radial: radial {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LEFT_WIN>
+                , <&macro_tap &kp PLUS>
+                , <&macro_release &kp LEFT_WIN>
+                ;
+        };
+    };
+};
+
+/ {
     behaviors {
         nav_word: nav_word {
             compatible = "zmk,behavior-auto-layer";
@@ -128,7 +142,7 @@
         nav_layer {
             display-name = "_____NAV";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &trans  &kp PG_DN  &trans  &trans  &trans  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &radial  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &trans  &kp PG_DN  &trans  &trans  &trans  &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
