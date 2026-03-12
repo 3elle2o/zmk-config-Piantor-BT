@@ -37,6 +37,16 @@
             #binding-cells = <0>;
             bindings = <&kp N7 &kp N3 &kp N0 &kp N0 &kp N2 &kp N0 &kp N9 &kp N9>;
         };
+
+blue: blue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp />
+                , <&macro_release &kp LGUI>
+                ;
+        };
     };
 };
 
@@ -107,7 +117,14 @@
             timeout-ms = <50>;
         };
 
-        NUM {
+
+        blue {
+            bindings = <&blue>;
+            key-positions = <1 2>;
+            timeout-ms = <50>;
+        };
+
+       NUM {
             bindings = <&num_word 2>;
             key-positions = <14 15 16>;
         };
