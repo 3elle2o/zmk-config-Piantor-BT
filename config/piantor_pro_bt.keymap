@@ -41,20 +41,6 @@
 };
 
 / {
-    macros {
-        blue: blue {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp SLASH>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-    };
-};
-
-/ {
     behaviors {
         nav_word: nav_word {
             compatible = "zmk,behavior-auto-layer";
@@ -118,13 +104,6 @@
         apos {
             bindings = <&kp APOS>;
             key-positions = <30 31>;
-            timeout-ms = <50>;
-        };
-
-
-        blue {
-            bindings = <&blue>;
-            key-positions = <1 2>;
             timeout-ms = <50>;
         };
 
