@@ -131,7 +131,7 @@
         compatible = "zmk,keymap";
 
         Base {
-            display-name = "/\/\/\/\/\/\";
+            display-name = "@@@@@@@@@";
 
             bindings = <
 &none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &tog 0  &none  &none  &sk RCTRL  &sk LSHIFT  &sl 3  &nav_word 1  &none
