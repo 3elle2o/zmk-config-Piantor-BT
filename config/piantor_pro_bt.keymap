@@ -121,6 +121,7 @@
         NUM {
             bindings = <&num_word 2>;
             key-positions = <3 4>;
+            timeout-ms = <50>;
         };
     };
 };
