@@ -18,7 +18,7 @@
 
 &num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
 
-&caps_word { continue-list = <SPACE BSPC>; };
+&caps_word { continue-list = <SPACE>; };
 
 &mt {
     tapping-term-ms = <130>; // This is the value already set by default
@@ -36,22 +36,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N7 &kp N3 &kp N0 &kp N0 &kp N2 &kp N0 &kp N9 &kp N9>;
-        };
-    };
-};
-
-/ {
-    macros {
-        radial: radial {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_WIN>,
-                <&macro_tap>,
-                <&kp PLUS>,
-                <&macro_release>,
-                <&kp LEFT_WIN>;
         };
     };
 };
