@@ -111,7 +111,19 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp X>, <&caps_word>, <&num_word 2>;
+            bindings = <&kp LSCHIFT>, <&caps_word>;
+        };
+    };
+};
+
+
+/ {
+    behaviors {
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LCTRL>, <&num_word 2>;
         };
     };
 };
@@ -123,7 +135,7 @@
         Base {
             display-name = "___@@@___";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &td0  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &tog 0  &none  &none  &num_word 2  &sk LSHIFT  &sl 3  &nav_word 1  &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &tog 0  &none  &none  &td1  &td0  &sl 3  &nav_word 1  &none
             >;
         };
 
