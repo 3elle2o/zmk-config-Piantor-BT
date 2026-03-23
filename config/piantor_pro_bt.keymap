@@ -8,7 +8,6 @@
 #include <behaviors/num_word.dtsi>
 #include <behaviors/num_word.dtsi>
 #include <input/processors.dtsi>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
 
@@ -101,29 +100,6 @@
             bindings = <&sk RCTRL>;
             key-positions = <16 14 15>;
             timeout-ms = <50>;
-        };
-    };
-};
-
-/ {
-    behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&caps_word>;
-        };
-    };
-};
-
-
-/ {
-    behaviors {
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LCTRL>, <&num_word 2>;
         };
     };
 };
