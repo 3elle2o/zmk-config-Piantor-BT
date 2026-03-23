@@ -98,12 +98,6 @@
             key-positions = <19 20 21>;
             timeout-ms = <50>;
         };
-
-        NUM {
-            bindings = <&sk RCTRL>;
-            key-positions = <16 14 15>;
-            timeout-ms = <50>;
-        };
     };
 };
 
@@ -121,26 +115,13 @@
 };
 
 / {
-    behaviors {
-        my_mtt: my_mod_tapt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&caps_word>, <&sk>;
-            display-name = "Layer-Tap";
-        };
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             display-name = "___@@@___";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &tog 0  &none  &none  &my_mt RCTRL 2   &my_mtt LSHIFT  &sl 3  &nav_word 1
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &tog 0  &none  &none  &my_mt RCTRL 2   &sk LSHIFT  &sl 3  &nav_word 1
             >;
         };
 
