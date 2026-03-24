@@ -107,6 +107,11 @@
             key-positions = <14 26>;
             timeout-ms = <50>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <4 3>;
+        };
     };
 };
 
@@ -117,7 +122,7 @@
         Base {
             display-name = "___@@@___";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp LA(TAB)  &none  &none  &num_word 2  &sk LSHIFT  &sl 3  &nav_word 1
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp LEFT_ALT  &none  &none  &num_word 2  &sk LSHIFT  &sl 3  &nav_word 1
             >;
         };
 
