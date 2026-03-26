@@ -90,7 +90,7 @@
             bindings = <&kp DEL>;
         };
 
-        combo_mau {
+        combomau {
             bindings = <&mau_word>;
             key-positions = <5 17>;
             timeout-ms = <50>;
