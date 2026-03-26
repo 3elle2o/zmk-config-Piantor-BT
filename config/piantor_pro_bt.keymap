@@ -51,7 +51,6 @@
     };
 };
 
-
 / {
     behaviors {
         mau_word: mau_word {
@@ -92,9 +91,9 @@
         };
 
         combo_mau {
-            timeout-ms = <50>;
-            key-positions = <5 17>;
             bindings = <&mau_word>;
+            key-positions = <5 17>;
+            timeout-ms = <50>;
         };
 
         tab {
