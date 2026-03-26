@@ -56,7 +56,7 @@
         mau_word: mau_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <SCRL_UP MB2 LEFT_WIN LALT LCTRL LSHFT DEL SCRL_DOWN MB2 MB1>;
+            continue-list = <SCRL_UP MB2 DEL SCRL_DOWN MB2 MB1>;
             ignore-modifiers;
         };
     };
