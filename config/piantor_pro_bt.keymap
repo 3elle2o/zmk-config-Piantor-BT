@@ -116,7 +116,7 @@
         };
 
         mouse {
-            bindings = <&mau_word>;
+            bindings = <&mau_word 4>;
             key-positions = <34 33>;
             timeout-ms = <50>;
         };
