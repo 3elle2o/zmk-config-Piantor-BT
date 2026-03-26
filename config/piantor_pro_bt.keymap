@@ -54,7 +54,7 @@
 
 / {
     behaviors {
-        mau_word: nav_word {
+        mau_word: mau_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
             continue-list = <SCRL_UP MB2 DEL SCRL_DOWN MB3 MB1>;
