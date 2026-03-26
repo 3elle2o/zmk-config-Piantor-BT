@@ -91,6 +91,12 @@
             bindings = <&kp DEL>;
         };
 
+        combo_mau {
+            timeout-ms = <50>;
+            key-positions = <5 17>;
+            bindings = <&mau_word>;
+        };
+
         tab {
             bindings = <&kp TAB>;
             key-positions = <16 17>;
@@ -163,7 +169,7 @@
         mau_layer {
             display-name = "!!!!!!!!";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &mkp MB2  &trans  &sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB3  &mkp MB1  &trans  &mkp MB2  &mkp MB3   &mkp MB1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &mkp RCLK  &mkp MCLK  &mkp LCLK  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
