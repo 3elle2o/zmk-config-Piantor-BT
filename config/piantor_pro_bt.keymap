@@ -50,6 +50,19 @@
     };
 };
 
+
+/ {
+    behaviors {
+        mau_word: mau_word {
+            compatible = "zmk,behavior-auto-layer";
+            #binding-cells = <1>;
+            continue-list = <SCRL_UP RCLK LEFT_WIN LALT LCTRL LSHFT DEL SCRL_DOWN MOVE_DOWN MCLK LCLK>;
+            ignore-modifiers;
+        };
+    };
+};
+
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -102,6 +115,12 @@
             timeout-ms = <50>;
         };
 
+        mouse {
+            bindings = <&mau_word>;
+            key-positions = <34 33>;
+            timeout-ms = <50>;
+        };
+
         control {
             bindings = <&sk LCTRL>;
             key-positions = <14 26>;
@@ -144,6 +163,13 @@
             display-name = "      <>";
             bindings = <
 &trans  &mt POUND AMPS  &kp F2  &mt BSLH DOLLAR  &mt LBKT RBKT  &mt LBRC RBRC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &bt BT_PRV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp SLASH  &kp AT  &kp F4  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        mau_layer {
+            display-name = "!!!!!!!!";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &mkp RCLK  &trans  &sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
