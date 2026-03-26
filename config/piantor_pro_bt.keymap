@@ -56,7 +56,7 @@
         mau_word: mau_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <SCRL_UP RCLK LEFT_WIN LALT LCTRL LSHFT DEL SCRL_DOWN MOVE_DOWN MCLK LCLK>;
+            continue-list = <SCRL_UP MB2 LEFT_WIN LALT LCTRL LSHFT DEL SCRL_DOWN MB2 MB1>;
             ignore-modifiers;
         };
     };
@@ -169,7 +169,7 @@
         mau_layer {
             display-name = "!!!!!!!!";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &mkp RCLK  &trans  &sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &mkp MB2  &trans  &sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN  &mkp MB3  &mkp MB1  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
