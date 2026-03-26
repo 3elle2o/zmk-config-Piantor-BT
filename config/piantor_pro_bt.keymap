@@ -57,7 +57,7 @@
         mau_word: mau_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <SCRL_UP MB2 DEL SCRL_DOWN MB3 MB1>;
+            continue-list = <SCRL_UP MB2 DEL ESC SCRL_DOWN MB3 MB1>;
             ignore-modifiers;
         };
     };
@@ -141,7 +141,7 @@
         Base {
             display-name = "___@@@___";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp RGUI  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp LALT  &none  &none  &num_word 2  &sk LSHIFT  &sl 3  &nav_word 1
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp LALT  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &mauword 4  &none  &none  &num_word 2  &sk LSHIFT  &sl 3  &nav_word 1
             >;
         };
 
@@ -169,7 +169,7 @@
         mau_layer {
             display-name = "!!!!!!!!";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &mkp RCLK  &mkp MCLK  &mkp LCLK  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &mkp RCLK  &mkp MCLK  &mkp LCLK  &msc SCRL_DOWN  &trans  &trans  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
