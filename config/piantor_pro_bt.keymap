@@ -115,6 +115,12 @@
             timeout-ms = <50>;
         };
 
+        laymmouse {
+            bindings = <&mkp MB2>;
+            key-positions = <33 34>;
+            timeout-ms = <50>;
+        };
+
         capslock {
             bindings = <&caps_word>;
             key-positions = <2 14>;
@@ -160,7 +166,7 @@
         };
 
         sym_layer {
-            display-name = "      <>";
+            display-name = "   <>   ";
             bindings = <
 &trans  &mt POUND AMPS  &kp F2  &mt BSLH DOLLAR  &mt LBKT RBKT  &mt LBRC RBRC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &bt BT_PRV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp SLASH  &kp AT  &kp F4  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
