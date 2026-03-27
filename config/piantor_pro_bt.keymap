@@ -147,7 +147,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&num_word 2>, <&sk>;
+            bindings = <&num_word>, <&sk>;
             display-name = "Layer-Tap";
         };
     };
@@ -160,7 +160,7 @@
         Base {
             display-name = "___@@@___";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp LALT  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &mau_word 4  &none  &none  &ltt RCTRL   &sk LSHIFT  &sl 3  &nav_word 1
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp LALT  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &mau_word 4  &none  &none  &ltt RCTRL 2   &sk LSHIFT  &sl 3  &nav_word 1
             >;
         };
 
