@@ -117,7 +117,7 @@
         Base {
             display-name = "___@@@___";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp LALT  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &caps_word  &none  &caps_word  &sk LCTRL  &sk LSHIFT  &sl 3  &nav_word 1  &none
+&none  &kp DEL  &kp W  &kp E  &kp R  &mkp RCLK  &kp Y  &kp U  &kp I  &kp O  &kp LALT  &none  &none  &mkp MCLK  &kp S  &kp D  &kp F  &mmv MOVE_UP  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &mkp LCLK  &kp X  &kp C  &kp V  &mmv MOVE_DOWN  &kp N  &kp M  &kp COMMA  &kp DOT  &caps_word  &none  &caps_word  &sk LCTRL  &kp ESC  &kp LSHFT  &nav_word 1  &none
             >;
         };
 
