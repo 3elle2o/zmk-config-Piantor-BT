@@ -132,7 +132,7 @@
         sym_layer {
             display-name = "   <>   ";
             bindings = <
-&trans  &mt POUND AMPS  &kp C_PLAY  &mt BSLH DOLLAR  &mt LBKT RBKT  &mt LBRC RBRC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp IT_DQT  &kp IT_LPAR  &kp IT_RPAR  &kp IT_UNDER  &Passfirma  &none  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp SLASH  &kp AT  &kp IT_EURO  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt POUND AMPS  &kp C_PLAY  &mt BSLH DOLLAR  &mt LBKT RBKT  &mt LBRC RBRC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp IT_DQT  &kp IT_LPAR  &kp IT_RPAR  &kp IT_UNDER  &Passfirma  &none  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp SLASH  &kp AT  &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
