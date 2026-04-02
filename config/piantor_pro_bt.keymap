@@ -87,14 +87,8 @@
         };
 
         grave {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp IT_APOS>;
             key-positions = <18 19>;
-            timeout-ms = <50>;
-        };
-
-        Apos {
-            bindings = <&kp APOS>;
-            key-positions = <30 31>;
             timeout-ms = <50>;
         };
 
@@ -118,7 +112,7 @@
         Base {
             display-name = "___@@@___";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp LALT  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &caps_word  &none  &caps_word  &sk LCTRL  &sk LSHIFT  &sl 3  &nav_word 1  &none
+&none  &kp Q  &kp W  &mt IT_E_ACUTE E  &kp R  &kp T  &kp Y  &mt IT_U_GRAVE U  &kp I  &mt IT_O_GRAVE O  &kp LALT  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &caps_word  &none  &caps_word  &sk LCTRL  &sk LSHIFT  &sl 3  &nav_word 1  &none
             >;
         };
 
