@@ -16,7 +16,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
+&num_word { continue-list = <IT_LPAR IT_RPAR IT_EQUAL IT_SLASH IT_MINUS IT_ASTRK IT_PLUS IT_PRCNT IT_COMMA IT_DOT>; };
 
 &caps_word { continue-list = <SPACE>; };
 
