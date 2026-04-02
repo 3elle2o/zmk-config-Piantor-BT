@@ -14,7 +14,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 40
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
@@ -133,7 +132,7 @@
         sym_layer {
             display-name = "   <>   ";
             bindings = <
-&trans  &mt POUND AMPS  &kp F2  &mt BSLH DOLLAR  &mt LBKT RBKT  &mt LBRC RBRC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &bt BT_NXT  &bt BT_PRV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY  &kp SLASH  &kp AT  &kp F4  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt POUND AMPS  &kp C_PLAY  &mt BSLH DOLLAR  &mt LBKT RBKT  &mt LBRC RBRC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp SLASH  &kp AT  &kp IT_EURO  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
