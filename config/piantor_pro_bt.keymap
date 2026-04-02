@@ -101,6 +101,12 @@
             bindings = <&kp ESC>;
             key-positions = <28 29>;
         };
+
+        grave {
+            bindings = <&kp APOS>;
+            key-positions = <30 31>;
+            timeout-ms = <50>;
+        };
     };
 };
 
