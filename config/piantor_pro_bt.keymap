@@ -111,7 +111,7 @@
         Base {
             display-name = "___@@@___";
             bindings = <
-&none  &kp Q  &kp W  &mt IT_E_ACUTE E  &kp R  &kp T  &kp Y  &mt IT_U_GRAVE U  &kp I  &mt IT_O_GRAVE O  &kp LALT  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &caps_word  &none  &caps_word  &sk LCTRL  &sk LSHIFT  &sl 3  &nav_word 1  &none
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp LALT  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &caps_word  &none  &caps_word  &sk LCTRL  &sk LSHIFT  &sl 3  &nav_word 1  &none
             >;
         };
 
@@ -125,14 +125,14 @@
         num_layer {
             display-name = "<<<_____";
             bindings = <
-&trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt IT_ASTRK IT_SLASH  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &mt IT_PLUS IT_MINUS  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt IT_EQUAL ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &none  &kp IT_COMMA  &kp KP_N0  &trans  &trans  &trans
+&trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt ASTRK SLASH  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &mt PLUS MINUS  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt EQUAL ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &none  &kp IT_COMMA  &kp KP_N0  &trans  &trans  &trans
             >;
         };
 
         sym_layer {
             display-name = "   <>   ";
             bindings = <
-&trans  &mt IT_POUND IT_AMPS  &kp C_PLAY  &mt IT_BSLH IT_DOLLAR  &mt IT_LBKT IT_RBKT  &mt IT_LBRC IT_RBRC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp IT_DQT  &kp IT_LPAR  &kp IT_RPAR  &kp IT_UNDER  &Passfirma  &none  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp IT_SLASH  &kp IT_AT  &kp IT_EURO  &kp IT_PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt POUND AMPS  &kp C_PLAY  &mt BSLH DOLLAR  &mt LBKT RBKT  &mt LBRC RBRC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp IT_DQT  &kp IT_LPAR  &kp IT_RPAR  &kp IT_UNDER  &Passfirma  &none  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp SLASH  &kp AT  &kp IT_EURO  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
