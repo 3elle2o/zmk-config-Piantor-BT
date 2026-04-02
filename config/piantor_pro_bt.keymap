@@ -85,8 +85,8 @@
             timeout-ms = <50>;
         };
 
-        grave {
-            bindings = <&kp IT_APOS>;
+        apos {
+            bindings = <&kp APOS>;
             key-positions = <18 19>;
             timeout-ms = <50>;
         };
