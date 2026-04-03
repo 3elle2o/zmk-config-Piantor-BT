@@ -48,13 +48,6 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
             ignore-modifiers;
         };
-
-        td1: td1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
-            #binding-cells = <0>;
-            bindings = <&kp Z>, <&nav_word>;
-        };
     };
 };
 
