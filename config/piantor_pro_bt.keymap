@@ -173,6 +173,13 @@
             key-positions = <19 7>;
             layers = <4>;
         };
+
+        tab_0 {
+            bindings = <&kp TAB>;
+            key-positions = <36 41>;
+            timeout-ms = <100>;
+            layers = <0>;
+        };
     };
 };
 
