@@ -76,13 +76,13 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NUM_W";
             #binding-cells = <0>;
-            bindings = <&caps_word>, <&kp W>;
+            bindings = <&num_word>, <&kp W>;
         };
 
         mau_word: mau_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
+            continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT>;
             ignore-modifiers;
             label = "MAU_WORD";
         };
@@ -211,6 +211,7 @@
         };
 
         MOUSE {
+            display-name = "MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB2  &mkp MB3  &mkp MB1  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
