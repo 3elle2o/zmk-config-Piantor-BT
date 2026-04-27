@@ -168,6 +168,11 @@
             layers = <4>;
         };
 
+        combo_mause {
+            bindings = <&mau_word 4>;
+            key-positions = <9 21>;
+        };
+
         scroll_sx {
             bindings = <&msc SCRL_LEFT>;
             key-positions = <19 7>;
