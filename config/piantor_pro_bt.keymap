@@ -202,7 +202,7 @@
         FRECCE {
             display-name = "FRECCE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &kp TAB  &kp PG_DN  &trans  &trans  &trans  &kp LEFT_WIN  &kp LALT  &sk LCTRL  &sk LSHFT  &kp DEL  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PG_UP  &kp TAB  &kp PG_DN  &trans  &trans  &trans  &kp LEFT_WIN  &kp LALT  &sk LCTRL  &sk LSHFT  &trans  &trans  &kp LEFT  &kp UP  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
