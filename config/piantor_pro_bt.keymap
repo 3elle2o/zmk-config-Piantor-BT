@@ -209,7 +209,7 @@
         NUMBER {
             display-name = "NUMBER";
             bindings = <
-&trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt ASTRK SLASH  &bt BT_NXT  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &mt PLUS MINUS  &bt BT_PRV  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt EQUAL ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &none  &kp COMMA  &kp KP_N0  &trans  &trans  &trans
+&trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt ASTRK SLASH  &bt BT_NXT  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &mt PLUS MINUS  &bt BT_PRV  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt EQUAL ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &kp BSPC  &kp COMMA  &kp KP_N0  &trans  &trans  &trans
             >;
         };
 
