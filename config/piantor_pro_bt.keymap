@@ -71,13 +71,6 @@
             bindings = <&to 0>, <&kp K>;
         };
 
-        num_w: num_w {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NUM_W";
-            #binding-cells = <0>;
-            bindings = <&num_word 2>, <&kp W>;
-        };
-
         mau_word: mau_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
@@ -169,7 +162,7 @@
         };
 
         num {
-            bindings = <&nav_word>;
+            bindings = <&num_word 2>;
             key-positions = <2 14>;
         };
 
