@@ -167,12 +167,12 @@
         };
 
         esc {
-            bindings = <&kp ESC>;
+            bindings = <&kp ESCAPE>;
             key-positions = <5 17>;
         };
 
         tab2 {
-            bindings = <&none>;
+            bindings = <&kp TAB>;
             key-positions = <17 29>;
         };
     };
