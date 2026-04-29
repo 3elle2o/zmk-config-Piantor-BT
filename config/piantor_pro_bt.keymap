@@ -14,7 +14,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 40
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -129,25 +128,13 @@
 
         combo_enter {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <31 32>;
             bindings = <&kp ENTER>;
         };
 
-        combo_del {
-            timeout-ms = <50>;
-            key-positions = <3 4>;
+        del {
             bindings = <&kp DEL>;
-        };
-
-        esc {
-            bindings = <&kp ESC>;
             key-positions = <28 27>;
-        };
-
-        grave {
-            bindings = <&kp APOS>;
-            key-positions = <31 32>;
-            timeout-ms = <50>;
         };
 
         scrol_up {
@@ -185,6 +172,11 @@
             timeout-ms = <100>;
             layers = <0>;
         };
+
+        num {
+            bindings = <&nav_word>;
+            key-positions = <2 14>;
+        };
     };
 };
 
@@ -195,7 +187,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&none  &kp Q  &num_w  &kp E  &kp R  &kp T  &caps_y  &kp U  &kp I  &kp O  &kp C_PLAY_PAUSE  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &apos_j  &kp N  &kp H  &kp L  &kp P  &none  &none  &mt LC(Z) Z  &kp X  &kp C  &kp V  &kp B  &base_k  &kp M  &kp COMMA  &kp KP_DOT  &mau_word 4  &none  &frecce_sx_giu DOWN_ARROW LEFT_ARROW  &sk LCTRL  &sk LSHIFT  &sl 3  &nav_word 1  &frecce_dx_su UP_ARROW RIGHT_ARROW
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &caps_y  &kp U  &kp I  &kp O  &mt C_PLAY_PAUSE ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &apos_j  &kp N  &kp H  &kp L  &kp P  &none  &none  &kp LC(Z)  &kp X  &kp C  &kp V  &kp B  &base_k  &kp M  &kp COMMA  &kp KP_DOT  &mau_word 4  &none  &frecce_sx_giu DOWN_ARROW LEFT_ARROW  &sk LCTRL  &sk LSHIFT  &sl 3  &nav_word 1  &frecce_dx_su UP_ARROW RIGHT_ARROW
             >;
         };
 
@@ -209,7 +201,7 @@
         NUMBER {
             display-name = "NUMERI";
             bindings = <
-&trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt ASTRK SLASH  &trans  &trans  &trans  &trans  &bt BT_NXT  &none  &trans  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &mt PLUS MINUS  &trans  &trans  &trans  &trans  &bt BT_PRV  &none  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt EQUAL ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &kp BSPC  &kp COMMA  &kp KP_N0  &trans  &trans  &trans
+&trans  &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &mt ASTRK SLASH  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &mt PLUS MINUS  &trans  &trans  &trans  &trans  &trans  &none  &trans  &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt EQUAL ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &kp BSPC  &kp COMMA  &kp KP_N0  &trans  &trans  &trans
             >;
         };
 
