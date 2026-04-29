@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "APOS_J";
             #binding-cells = <0>;
-            bindings = <&kp APOS>, <&kp J>;
+            bindings = <&kp GRAVE>, <&kp J>;
         };
 
         base_k: base_k {
