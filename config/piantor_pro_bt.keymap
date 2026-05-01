@@ -171,12 +171,12 @@
         };
 
         maus {
-            bindings = <&mau_word>;
+            bindings = <&mau_word 4>;
             key-positions = <28 16>;
         };
 
         naviga {
-            bindings = <&nav_word>;
+            bindings = <&nav_word 1>;
             key-positions = <26 14>;
             require-prior-idle-ms = <3000>;
         };
