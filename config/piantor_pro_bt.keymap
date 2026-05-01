@@ -154,13 +154,6 @@
             layers = <4>;
         };
 
-        tab_0 {
-            bindings = <&kp TAB>;
-            key-positions = <36 41>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
-
         num {
             bindings = <&num_word 2>;
             key-positions = <2 14>;
