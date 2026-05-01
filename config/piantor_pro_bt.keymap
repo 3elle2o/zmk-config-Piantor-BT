@@ -157,7 +157,6 @@
         num {
             bindings = <&num_word 2>;
             key-positions = <2 14>;
-            require-prior-idle-ms = <3000>;
         };
 
         esc {
@@ -178,7 +177,6 @@
         naviga {
             bindings = <&nav_word 1>;
             key-positions = <26 14>;
-            require-prior-idle-ms = <3000>;
         };
 
         base {
