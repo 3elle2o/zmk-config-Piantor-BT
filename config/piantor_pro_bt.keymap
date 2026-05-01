@@ -74,7 +74,7 @@
         mau_word: mau_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT>;
+            continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT DEL ESC SPACE>;
             ignore-modifiers;
             label = "MAU_WORD";
         };
