@@ -180,6 +180,11 @@
             key-positions = <26 14>;
             require-prior-idle-ms = <3000>;
         };
+
+        base {
+            bindings = <&tog 0>;
+            key-positions = <15 27>;
+        };
     };
 };
 
