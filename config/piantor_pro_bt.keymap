@@ -50,11 +50,11 @@
             ignore-modifiers;
         };
 
-        naviga_y: naviga_y {
+        play_y: play_y {
             compatible = "zmk,behavior-tap-dance";
-            label = "NAVIGA_Y";
+            label = "PLAY_Y";
             #binding-cells = <0>;
-            bindings = <&nav_word 1>, <&kp Y>;
+            bindings = <&kp Y>, <&kp C_PLAY_PAUSE>;
         };
 
         apos_j: apos_j {
@@ -132,25 +132,25 @@
 
         scrol_up {
             bindings = <&msc SCRL_UP>;
-            key-positions = <7 9>;
+            key-positions = <2 4>;
             layers = <4>;
         };
 
         scroll_down {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <31 33>;
+            key-positions = <26 28>;
             layers = <4>;
         };
 
         scroll_dx {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <9 21>;
+            key-positions = <4 16>;
             layers = <4>;
         };
 
         scroll_sx {
             bindings = <&msc SCRL_LEFT>;
-            key-positions = <19 7>;
+            key-positions = <2 14>;
             layers = <4>;
         };
 
@@ -164,6 +164,7 @@
         num {
             bindings = <&num_word 2>;
             key-positions = <2 14>;
+            require-prior-idle-ms = <3000>;
         };
 
         esc {
@@ -175,6 +176,17 @@
             bindings = <&kp TAB>;
             key-positions = <17 29>;
         };
+
+        maus {
+            bindings = <&mau_word>;
+            key-positions = <28 16>;
+        };
+
+        naviga {
+            bindings = <&nav_word>;
+            key-positions = <26 14>;
+            require-prior-idle-ms = <3000>;
+        };
     };
 };
 
@@ -185,7 +197,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &naviga_y  &kp U  &kp I  &kp O  &kp C_PLAY_PAUSE  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &mt J SPACE  &mt K IT_APOS  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &mau_word 4  &none  &frecce_sx_giu DOWN_ARROW LEFT_ARROW  &sk LCTRL  &sk LSHIFT  &sl 3  &caps_word  &frecce_dx_su UP_ARROW RIGHT_ARROW
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &play_y  &kp U  &kp I  &kp O  &sk LEFT_ALT  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &mt J SPACE  &mt K IT_APOS  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &sk LEFT_GUI  &none  &frecce_sx_giu DOWN_ARROW LEFT_ARROW  &sk LCTRL  &sk LSHIFT  &sl 3  &caps_word  &frecce_dx_su UP_ARROW RIGHT_ARROW
             >;
         };
 
