@@ -75,31 +75,9 @@
         mau_word: mau_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT DEL ESC SPACE>;
+            continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT DEL ESC SPACE ENTER>;
             ignore-modifiers;
             label = "MAU_WORD";
-        };
-
-        frecce_dx_su: frecce_dx_su {
-            compatible = "zmk,behavior-hold-tap";
-            label = "FRECCE_DX_SU";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <41>;
-        };
-
-        frecce_sx_giu: frecce_sx_giu {
-            compatible = "zmk,behavior-hold-tap";
-            label = "FRECCE_SX_GIU";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <36>;
         };
     };
 };
@@ -152,7 +130,7 @@
         };
 
         naviga {
-            bindings = <&nav_word 1>;
+            bindings = <&sl 1>;
             key-positions = <26 14>;
         };
 
