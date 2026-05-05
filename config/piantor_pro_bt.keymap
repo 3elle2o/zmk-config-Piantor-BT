@@ -62,14 +62,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NAV_J";
             #binding-cells = <0>;
-            bindings = <&nav_word>, <&kp J>;
+            bindings = <&nav_word 1>, <&kp J>;
         };
 
         mau_k: mau_k {
             compatible = "zmk,behavior-tap-dance";
             label = "MAU_K";
             #binding-cells = <0>;
-            bindings = <&mau_word>, <&kp K>;
+            bindings = <&mau_word 4>, <&kp K>;
         };
 
         mau_word: mau_word {
