@@ -54,7 +54,6 @@
             #binding-cells = <1>;
             continue-list = <LEFT_ALT LEFT_GUI LEFT_CONTROL LEFT_SHIFT LEFT_ARROW UP_ARROW RIGHT_ARROW DOWN_ARROW>;
             ignore-modifiers;
-            label = "NAV_WORD";
         };
 
         mau_word: mau_word {
@@ -62,10 +61,9 @@
             #binding-cells = <1>;
             continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT DEL ESC SPACE ENTER>;
             ignore-modifiers;
-            label = "MAU_WORD";
         };
     };
-};
+
 
 / {
     combos {
