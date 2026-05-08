@@ -137,7 +137,7 @@
 
         FRECCE {
             display-name = "OPZIONI";
-            bindings = <`jkkkjkjk,
+            bindings = <
 &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
