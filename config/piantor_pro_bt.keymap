@@ -108,7 +108,7 @@
         };
 
         naviga {
-            bindings = <&sl 1>;
+            bindings = <&nav_word 1>;
             key-positions = <26 14>;
         };
 
