@@ -65,7 +65,6 @@
     };
 };
 
-
 / {
     behaviors {
         my_mt: my_mod_tap {
@@ -74,12 +73,11 @@
             flavor = "hold-preferred";
             tapping-term-ms = <130>;
             bindings = <&kp>, <&sk>;
+
             display-name = "Mod-Tap";
         };
     };
 };
-
-
 
 / {
     combos {
@@ -135,7 +133,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &play_y  &kp U  &kp I  &kp O  &mau_word 4  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &nav_word 1  &none  &num_word 2  &sk LEFT_CONTROL  &my_mt &capsword LEFT_SHIFT  &sl 3  &kp APOS  &sl 5
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &play_y  &kp U  &kp I  &kp O  &mau_word 4  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &nav_word 1  &none  &num_word 2  &sk LEFT_CONTROL  &my_mt CAPSLOCK LEFT_SHIFT  &sl 3  &kp APOS  &to 0
             >;
         };
 
