@@ -102,12 +102,17 @@
 
         media {
             bindings = <&sl 5>;
-            key-positions = <37 40>;
+            key-positions = <36 41>;
         };
 
         maiusc {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <38 39>;
+            key-positions = <37 40>;
+        };
+
+        apostrofo {
+            bindings = <&kp APOS>;
+            key-positions = <39 38>;
         };
     };
 };
@@ -122,35 +127,35 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &kp TAB  &none  &nav_word  &num_word 2  &sk LEFT_SHIFT  &sl 3  &kp APOS  &mau_word
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &kp TAB  &none  &sl 5  &to 2  &sk LEFT_SHIFT  &sl 3  &to 1  &to 4
             >;
         };
 
         FRECCE {
             display-name = "FRECCE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &trans  &trans  &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LS(LEFT_ARROW))  &kp LG(T)  &kp LC(LS(RIGHT_ARROW))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &trans  &trans  &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LS(LEFT_ARROW))  &trans  &kp LC(LS(RIGHT_ARROW))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         NUMBER {
             display-name = "NUMERI";
             bindings = <
-&trans  &kp ASTRK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &kp KP_N0  &trans  &trans  &trans
+&trans  &kp ASTRK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &trans  &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &sk RIGHT_GUI  &sk RIGHT_ALT  &trans  &trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &kp KP_N0  &trans  &trans  &trans
             >;
         };
 
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&trans  &kp PAGE_UP  &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &sl 5  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &kp PG_DN  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp F2  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &kp BACKSLASH  &kp DOLLAR  &kp AMPS  &kp HASH  &kp C_AL_CALCULATOR  &kp SLASH  &kp AT  &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_UP  &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &caps_word  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &kp PG_DN  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp F2  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &kp BACKSLASH  &kp DOLLAR  &kp AMPS  &kp HASH  &kp C_AL_CALCULATOR  &kp SLASH  &kp AT  &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &msc SCRL_RIGHT  &msc SCRL_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB2  &mkp MB3  &mkp MB1  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &trans  &trans  &trans  &mmv MOVE_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &msc SCRL_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &mkp MB2  &mkp MB3  &mkp MB1  &msc SCRL_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -174,6 +179,11 @@
 
         querty2 {
             if-layers = <2 4>;
+            then-layer = <0>;
+        };
+
+        querty3 {
+            if-layers = <1 4>;
             then-layer = <0>;
         };
     };
