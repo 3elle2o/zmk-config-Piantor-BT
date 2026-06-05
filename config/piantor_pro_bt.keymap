@@ -18,7 +18,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&num_word { continue-list = <LPAR RPAR IT_EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA KP_DOT>; };
+&num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA KP_DOT>; };
 
 &caps_word { continue-list = <SPACE>; };
 
@@ -47,14 +47,14 @@
     nav_word: nav_word {
         compatible = "zmk,behavior-auto-layer";
         #binding-cells = <1>;
-        continue-list = <LG(T) LG(DOWN_ARROW) LG(UP_ARROW) LG(LEFT_ARROW) LG(RIGHT_ARROW)>;
+        continue-list = <LG(T) LG(DOWN_ARROW) LG(UP_ARROW) LG(LEFT_ARROW) LG(RIGHT_ARROW LC(LS(LEFT_ARROW)) LC(LS(RIGHT_ARROW))) LEFT_ARROW UP_ARROW RIGHT_ARROW DOWN_ARROW>;
         ignore-modifiers;
     };
 
     mau_word: mau_word {
         compatible = "zmk,behavior-auto-layer";
         #binding-cells = <1>;
-        continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT DEL ESC SPACE ENTER>;
+        continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT>;
         ignore-modifiers;
     };
 };
@@ -127,7 +127,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &kp TAB  &none  &sl 5  &to 2  &sk LEFT_SHIFT  &sl 3  &to 1  &to 4
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &kp TAB  &none  &sl 5  &num_word 2  &sk LEFT_SHIFT  &sl 3  &nav_word 1  &mau_word 4
             >;
         };
 
