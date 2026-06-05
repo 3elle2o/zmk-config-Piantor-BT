@@ -100,18 +100,13 @@
             key-positions = <28 27>;
         };
 
-        mouse {
-            bindings = <&mau_word 4>;
-            key-positions = <16 15 14>;
-        };
-
-        caps {
-            bindings = <&caps_word>;
-            key-positions = <19 20 21>;
-        };
-
         media {
             bindings = <&sl 5>;
+            key-positions = <37 40>;
+        };
+
+        maiusc {
+            bindings = <&kp CAPSLOCK>;
             key-positions = <38 39>;
         };
     };
@@ -127,7 +122,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &nav_word 1  &none    &sk LEFT_CONTROL  &num_word 2  &sk LEFT_SHIFT  &sl 3  &kp APOS  &sl 5
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &kp TAB  &none  &nav_word  &num_word 2  &sk LEFT_SHIFT  &sl 3  &kp APOS  &mau_word
             >;
         };
 
