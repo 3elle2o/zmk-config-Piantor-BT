@@ -47,7 +47,7 @@
     nav_word: nav_word {
         compatible = "zmk,behavior-auto-layer";
         #binding-cells = <1>;
-        continue-list = <LEFT_ALT LEFT_GUI LEFT_CONTROL LEFT_SHIFT LEFT_ARROW UP_ARROW RIGHT_ARROW DOWN_ARROW LG(T) LG(DOWN_ARROW) LG(UP_ARROW) LG(LEFT_ARROW) LG(RIGHT_ARROW)>;
+        continue-list = <LG(T) LG(DOWN_ARROW) LG(UP_ARROW) LG(LEFT_ARROW) LG(RIGHT_ARROW)>;
         ignore-modifiers;
     };
 
@@ -109,6 +109,11 @@
             bindings = <&caps_word>;
             key-positions = <19 20 21>;
         };
+
+        media {
+            bindings = <&sl 5>;
+            key-positions = <38 39>;
+        };
     };
 };
 
@@ -122,14 +127,14 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &to 0  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &nav_word 1  &none  &num_word 2  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sl 3  &kp APOS  &sl 5
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &nav_word 1  &none  &num_word 2  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &sl 3  &kp APOS  &sl 5
             >;
         };
 
         FRECCE {
             display-name = "FRECCE";
             bindings = <
-&trans  &kp LG(T)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &kp TAB  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &trans  &trans  &sk LEFT_ALT  &sk LEFT_GUI  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LS(LEFT_ARROW))  &kp LG(T)  &kp LC(LS(RIGHT_ARROW))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -143,7 +148,7 @@
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&trans  &kp PAGE_UP  &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &kp ESC  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &kp PG_DN  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp F2  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &kp BACKSLASH  &kp DOLLAR  &kp AMPS  &kp HASH  &kp C_AL_CALCULATOR  &kp SLASH  &kp AT  &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_UP  &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &sl 5  &kp SEMI  &kp COLON  &kp EXCL  &kp QUESTION  &Passpc  &none  &trans  &kp PG_DN  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp F2  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &Passfirma  &none  &trans  &kp BACKSLASH  &kp DOLLAR  &kp AMPS  &kp HASH  &kp C_AL_CALCULATOR  &kp SLASH  &kp AT  &kp HOME  &kp PERCENT  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
