@@ -113,12 +113,12 @@
 
         maiusc {
             bindings = <&caps_word>;
-            key-positions = <16 28>;
+            key-positions = <38 39>;
         };
 
         apostrofo {
             bindings = <&kp APOS>;
-            key-positions = <19 31>;
+            key-positions = <19 20 21>;
         };
     };
 };
