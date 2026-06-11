@@ -41,30 +41,21 @@
             bindings = <&kp N7 &kp N3 &kp N0 &kp N0 &kp N2 &kp N0 &kp N9 &kp N9>;
         };
 
+
         apri_cal_c: apri_cal_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
+            wait-ms = <20>;
+            tap-ms = <20>;
             bindings
-                /* 1. Apri "Esegui" (Win + R) usando i modificatori accoppiati */
+                /* 1. Apre Esegui (Win + R) */
                 = <&kp LG(R)>
             
-                /* 2. Attendi 300ms che la finestra appaia */
-                , <&macro_wait_time 300>
-                , <&kp NONE>
+                /* 2. Pausa nativa: usiamo una serie di kp NONE sequenziali invece di macro_wait_time */
+                , <&kp NONE &kp NONE &kp NONE &kp NONE &kp NONE>
             
-                /* 3. Ripristina il tempo e digita il comando + Invio */
-                , <&macro_wait_time 30>
-                , <&kp C &kp H &kp R &kp O &kp M &kp E &kp SPACE &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp RET>
-            
-                /* 4. Attendi 3 secondi (3000ms) il caricamento di Chrome */
-                , <&macro_wait_time 3000>
-                , <&kp NONE>
-            
-                /* 5. Ripristina il tempo e premi C */
-                , <&macro_wait_time 30>
-                , <&kp C>
+                /* 3. Inserisce il link diretto all'editor eventi di Calendar e preme Invio */
+                , <&kp C &kp H &kp R &kp O &kp M &kp E &kp SPACE &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp SLASH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp SLASH &kp U &kp SLASH &kp N0 &kp SLASH &kp R &kp SLASH &kp E &kp V &kp E &kp N &kp T &kp E &kp D &kp I &kp T &kp RET>
                 ;
         };
     };
