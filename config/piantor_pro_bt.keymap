@@ -29,27 +29,27 @@
 
 / {
     macros {
-            Passpc: Passpc {
+        Passpc: Passpc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <15>;
+            tap-ms = <15>;
             bindings = <&kp N0 &kp N3 &kp N1 &kp N1>;
         };
 
         Passfirma: Passfirma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <15>;
+            tap-ms = <15>;
             bindings = <&kp N7 &kp N3 &kp N0 &kp N0 &kp N2 &kp N0 &kp N9 &kp N9>;
         };
 
         apri_cal_c: apri_cal_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <25>;
+            tap-ms = <25>;
             bindings = <&kp LG(R) &kp NONE &kp NONE &kp NONE &kp NONE &kp NONE &kp C &kp H &kp R &kp O &kp M &kp E &kp SPACE &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp SLASH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp SLASH &kp U &kp SLASH &kp N0 &kp SLASH &kp R &kp SLASH &kp E &kp V &kp E &kp N &kp T &kp E &kp D &kp I &kp T &kp RET>;
         };
     };
