@@ -41,33 +41,34 @@
             bindings = <&kp N7 &kp N3 &kp N0 &kp N0 &kp N2 &kp N0 &kp N9 &kp N9>;
         };
 
+        
         apri_cal_c: apri_cal_c {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        wait-ms = <30>;
-        tap-ms = <30>;
-        bindings
-            /* 1. Apri "Esegui" di Windows (Win + R) */
-            = <&macro_press &kp LGUI>
-            , <&macro_tap &kp R>
-            , <&macro_release &kp LGUI>
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings
+                /* 1. Apri "Esegui" usando la combinazione nativa LGUI + R */
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp R>
+                , <&macro_release &kp LGUI>
             
-            /* 2. Attendi che la finestra "Esegui" appaia */
-            , <&macro_wait_time 300>
-            , <&kp NONE> /* Nei blocchi macro puoi usare direttamente &kp senza macro_tap */
+                /* 2. Attendi che la finestra "Esegui" appaia */
+                , <&macro_wait_time 300>
+                , <&macro_tap &kp NONE>
             
-            /* 3. Digita il comando e premi Invio */
-            , <&macro_wait_time 30>
-            , <&kp C &kp H &kp R &kp O &kp M &kp E &kp SPACE &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp RET>
+                /* 3. Digita il comando e premi Invio */
+                , <&macro_wait_time 30>
+                , <&macro_tap &kp C &kp H &kp R &kp O &kp M &kp E &kp SPACE &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp RET>
             
-            /* 4. ATTENDI 3 secondi per il caricamento di Chrome */
-            , <&macro_wait_time 3000>
-            , <&kp NONE>
+                /* 4. ATTENDI 3 secondi per il caricamento di Chrome */
+                , <&macro_wait_time 3000>
+                , <&macro_tap &kp NONE>
             
-            /* 5. Premi "C" per comporre l'evento */
-            , <&macro_wait_time 30>
-            , <&kp C>
-            ;
+                /* 5. Premi "C" per comporre l'evento */
+                , <&macro_wait_time 30>
+                , <&macro_tap &kp C>
+                ;
         };
     };
 };
