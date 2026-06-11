@@ -27,8 +27,9 @@
     flavor = "balanced";
 };
 
-macros {
-        Passpc: Passpc {
+/ {
+    macros {
+            Passpc: Passpc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -52,6 +53,7 @@ macros {
             bindings = <&kp LG(R) &kp NONE &kp NONE &kp NONE &kp NONE &kp NONE &kp C &kp H &kp R &kp O &kp M &kp E &kp SPACE &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp SLASH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp SLASH &kp U &kp SLASH &kp N0 &kp SLASH &kp R &kp SLASH &kp E &kp V &kp E &kp N &kp T &kp E &kp D &kp I &kp T &kp RET>;
         };
     };
+};
 
 / {
     nav_word: nav_word {
