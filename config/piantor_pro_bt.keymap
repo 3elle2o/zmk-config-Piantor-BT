@@ -159,7 +159,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &modificatori LEFT_SHIFT A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &modificatori RIGHT_ALT P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &modificatori LEFT_GUI TAB  &none  &kp UP  &kp LEFT  &schiftnum 2 LEFT_SHIFT  &symmau 0 3  &kp RIGHT  &kp DOWN
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &modificatori LEFT_SHIFT A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &modificatori RIGHT_ALT P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &modificatori LEFT_GUI TAB  &none  &kp UP  &kp LEFT  &schiftnum 2 LEFT_SHIFT  &sl 3  &kp RIGHT  &kp DOWN
             >;
         };
 
