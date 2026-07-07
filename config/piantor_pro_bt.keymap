@@ -136,7 +136,7 @@
         };
 
         numeri {
-            bindings = <&nav_word>;
+            bindings = <&num_word 2>;
             key-positions = <28 16>;
         };
     };
