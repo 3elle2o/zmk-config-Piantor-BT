@@ -23,8 +23,8 @@
 &caps_word { continue-list = <SPACE>; };
 
 &mt {
-    tapping-term-ms = <130>; // This is the value already set by default
-    flavor = "balanced";
+    tapping-term-ms = <150>; // This is the value already set by default
+    flavor = "tap-preferred";
 };
 
 / {
@@ -44,13 +44,16 @@
         apri_cal_c: apri_cal_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 300>
-                , <&macro_tap &kp C &kp H &kp R &kp O &kp M &kp E &kp SPACE &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp SLASH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp SLASH &kp U &kp SLASH &kp N0 &kp SLASH &kp R &kp SLASH &kp E &kp V &kp E &kp N &kp T &kp E &kp D &kp I &kp T &kp RET>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 300>,
+                <&macro_tap>,
+                <&kp C &kp H &kp R &kp O &kp M &kp E &kp SPACE &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp SLASH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp SLASH &kp U &kp SLASH &kp N0 &kp SLASH &kp R &kp SLASH &kp E &kp V &kp E &kp N &kp T &kp E &kp D &kp I &kp T &kp RET>;
         };
     };
 };
@@ -79,17 +82,18 @@
             flavor = "hold-preferred";
             tapping-term-ms = <130>;
             bindings = <&kp>, <&sk>;
+
             display-name = "Mod-Tap";
         };
 
-        copiaincolla: copiaincolla {
+        modificatori: modificatori {
             compatible = "zmk,behavior-hold-tap";
-            label = "COPIAINCOLLA";
-            bindings = <&kp>, <&kp>;
+            label = "MODIFICATORI";
+            bindings = <&sk>, <&kp>;
+
             #binding-cells = <2>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            hold-trigger-key-positions = <28 26 27>;
         };
     };
 };
@@ -140,7 +144,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &kp TAB  &none  &sl 5  &num_word 2  &sk LEFT_SHIFT  &sl 3  &nav_word 1  &mau_word 4
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp ESC  &none  &none  &modificatori LEFT_SHIFT A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &modificatori RIGHT_ALT P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp KP_DOT  &modificatori LEFT_GUI TAB  &none  &kp UP  &kp LEFT  &lt 2 LEFT_SHIFT  &sl 3  &kp RIGHT  &kp DOWN
             >;
         };
 
@@ -154,7 +158,7 @@
         NUMBER {
             display-name = "NUMERI";
             bindings = <
-&trans  &kp ASTRK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &trans  &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &sk RIGHT_GUI  &sk RIGHT_ALT  &trans  &trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &trans  &kp KP_N0  &trans  &trans  &trans
+&trans  &kp ASTRK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &mt DOT COMMA  &kp N0  &kp KP_N0  &trans  &trans  &trans
             >;
         };
 
@@ -168,7 +172,7 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &msc SCRL_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &mkp MB2  &mkp MB3  &mkp MB1  &msc SCRL_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &msc SCRL_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &mkp MB2  &mkp MB3  &mkp MB1  &msc SCRL_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN  &trans  &trans
             >;
         };
 
@@ -177,6 +181,7 @@
             bindings = <
 &trans  &bt BT_SEL 0  &trans  &trans  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1  &kp C_PREVIOUS  &kp C_NEXT  &kp C_PLAY_PAUSE  &kp LG(DOT)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 2  &trans  &trans  &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &apri_cal_c
             >;
+
             label = "MEDIA";
         };
     };
