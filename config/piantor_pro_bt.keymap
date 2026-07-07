@@ -144,6 +144,11 @@
             bindings = <&num_word 2>;
             key-positions = <28 16>;
         };
+
+        mau {
+            bindings = <&none>;
+            key-positions = <7 8 9>;
+        };
     };
 };
 
