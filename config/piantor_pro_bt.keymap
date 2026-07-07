@@ -127,12 +127,17 @@
 
         maiusc {
             bindings = <&caps_word>;
-            key-positions = <38 39>;
+            key-positions = <31 19>;
         };
 
         apostrofo {
             bindings = <&kp APOS>;
             key-positions = <19 20 21>;
+        };
+
+        numeri {
+            bindings = <&nav_word>;
+            key-positions = <28 16>;
         };
     };
 };
