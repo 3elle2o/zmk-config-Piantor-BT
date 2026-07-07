@@ -90,16 +90,6 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
-
-        symmau: symmau {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SYMMAU";
-            bindings = <&mau_word 4>, <&sl>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
     };
 };
 
