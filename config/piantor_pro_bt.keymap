@@ -163,7 +163,7 @@
         NUMBER {
             display-name = "NUMERI";
             bindings = <
-&trans  &kp ASTRK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &mt DOT COMMA  &kp N0  &kp KP_N0  &trans  &trans  &trans
+&trans  &kp ASTRK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &mt DOT COMMA  &kp N0  &trans  &trans  &trans  &trans
             >;
         };
 
