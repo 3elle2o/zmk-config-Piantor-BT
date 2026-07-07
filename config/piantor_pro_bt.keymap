@@ -10,7 +10,7 @@
 #include <input/processors.dtsi>
 #include "keys_it.h"
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1700
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 40
 
 #include <behaviors.dtsi>
@@ -39,21 +39,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N7 &kp N3 &kp N0 &kp N0 &kp N2 &kp N0 &kp N9 &kp N9>;
-        };
-
-        apri_cal_c: apri_cal_c {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp R>,
-                <&macro_release>,
-                <&kp LGUI>,
-                <&macro_wait_time 300>,
-                <&macro_tap>,
-                <&kp C &kp H &kp R &kp O &kp M &kp E &kp SPACE &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp DOT &kp G &kp O &kp O &kp G &kp L &kp E &kp DOT &kp C &kp O &kp M &kp SLASH &kp C &kp A &kp L &kp E &kp N &kp D &kp A &kp R &kp SLASH &kp U &kp SLASH &kp N0 &kp SLASH &kp R &kp SLASH &kp E &kp V &kp E &kp N &kp T &kp E &kp D &kp I &kp T &kp RET>;
         };
     };
 };
@@ -109,7 +94,7 @@
         symmau: symmau {
             compatible = "zmk,behavior-hold-tap";
             label = "SYMMAU";
-            bindings = <&mau_word>, <&sl>;
+            bindings = <&mau_word 4>, <&sl>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
