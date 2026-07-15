@@ -127,7 +127,7 @@
 
         del {
             bindings = <&kp DEL>;
-            key-positions = <28 27>;
+            key-positions = <5 17>;
         };
 
         maiusc {
@@ -142,7 +142,7 @@
 
         numeri {
             bindings = <&num_word 2>;
-            key-positions = <28 16>;
+            key-positions = <17 29>;
         };
 
         mau {
