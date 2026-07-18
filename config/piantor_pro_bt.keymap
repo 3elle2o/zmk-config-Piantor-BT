@@ -127,7 +127,7 @@
 
         del {
             bindings = <&kp DEL>;
-            key-positions = <5 17>;
+            key-positions = <14 2>;
         };
 
         maiusc {
@@ -142,12 +142,22 @@
 
         numeri {
             bindings = <&num_word 2>;
-            key-positions = <17 29>;
+            key-positions = <26 14>;
         };
 
         mau {
             bindings = <&mau_word 4>;
             key-positions = <7 19>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <5 17>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <17 29>;
         };
     };
 };
