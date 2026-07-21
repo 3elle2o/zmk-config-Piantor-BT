@@ -9,13 +9,10 @@
 #include <behaviors/num_word.dtsi>
 #include <input/processors.dtsi>
 #include "keys_it.h"
-#include <zmk,behavior-input-two-axis>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
 
 &mmv {
-    x-input-code = <INPUT_REL_X>;
-    y-input-code = <INPUT_REL_Y>;
     time-to-max-speed-ms = <300>;
     acceleration-exponent = <1>;
 };
@@ -23,8 +20,6 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 40
 
 &msc {
-    x-input-code = <INPUT_REL_HWHEEL>;
-    y-input-code = <INPUT_REL_WHEEL>;
     time-to-max-speed-ms = <300>;
     acceleration-exponent = <0>;
 };
