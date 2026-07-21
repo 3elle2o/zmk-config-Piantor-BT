@@ -9,6 +9,7 @@
 #include <behaviors/num_word.dtsi>
 #include <input/processors.dtsi>
 #include "keys_it.h"
+#include <zmk,behavior-input-two-axis>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
 
