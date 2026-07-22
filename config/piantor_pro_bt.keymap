@@ -20,22 +20,26 @@
 
 / {
     behaviors {
-        // Tasto TURBO: Moltiplica la velocità x3
+        // Tasto TURBO: Moltiplica x3
         zip_turbo: zip_turbo {
-            compatible = "zmk,behavior-input-processor";
+            compatible = "zmk,behavior-input-two-axis-scaler";
             #binding-cells = <0>;
-            device = <&mmv>;
-            processor = <&zip_xy_scaler 3 1>;
+            x-scaling = <3 1>;
+            y-scaling = <3 1>;
         };
 
-        // Tasto PRECISIONE: Divide la velocità per 3
+        // Tasto PRECISIONE: Divide per 3
         zip_lento: zip_lento {
-            compatible = "zmk,behavior-input-processor";
+            compatible = "zmk,behavior-input-two-axis-scaler";
             #binding-cells = <0>;
-            device = <&mmv>;
-            processor = <&zip_xy_scaler 1 3>;
+            x-scaling = <1 3>;
+            y-scaling = <1 3>;
         };
+    };
+};
 
+/ {
+    behaviors {
         my_mt: my_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
