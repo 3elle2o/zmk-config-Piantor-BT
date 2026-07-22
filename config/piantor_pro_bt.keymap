@@ -141,7 +141,7 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &msc SCRL_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &mkp MB2  &mkp MB3  &mkp MB1  &msc SCRL_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo 6  &mo 7  &mmv MOVE_DOWN  &trans  &trans
+&trans  &trans  &trans  &trans  &msc SCRL_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &mkp MB2  &mkp MB3  &mkp MB1  &msc SCRL_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &mmv MOVE_DOWN  &trans  &trans
             >;
         };
 
@@ -149,28 +149,6 @@
             display-name = "MEDIA";
             bindings = <
 &trans  &bt BT_SEL 0  &trans  &trans  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 1  &kp C_PREVIOUS  &kp C_NEXT  &kp C_PLAY_PAUSE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 2  &trans  &trans  &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        MOUSE_LENTO {
-            display-name = "LENTO";
-            input-processors = <&zip_xy_scaler 1 3>;
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        MOUSE_TURBO {
-            display-name = "TURBO";
-            input-processors = <&zip_xy_scaler 3 1>;
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
