@@ -186,7 +186,7 @@
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&trans  &kp DOLLAR  &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &kp SLASH  &none  &kp COLON  &kp SEMI  &none  &passpc  &none  &trans  &kp HASH  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AMPS  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &passfirma  &none  &trans  &trans  &kp PIPE  &kp BSLH  &kp PERCENT  &kp F2  &none  &kp AT  &kp HOME  &none  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DOLLAR  &kp LESS_THAN  &kp LEFT_BRACE  &kp LBKT  &kp SLASH  &none  &kp COLON  &kp SEMI  &none  &passpc  &none  &trans  &kp HASH  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AMPS  &kp DQT  &kp LPAR  &kp RPAR  &kp UNDER  &passfirma  &none  &trans  &kp CARET  &kp PIPE  &kp BSLH  &kp PERCENT  &kp F2  &none  &kp AT  &kp HOME  &none  &kp PRINTSCREEN  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
