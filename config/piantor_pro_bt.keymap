@@ -10,8 +10,8 @@
 #include <input/processors.dtsi>
 #include "keys_it.h"
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
-#define MOUSE_TIME_TO_MAX_SPEED 500
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
+#define MOUSE_TIME_TO_MAX_SPEED 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
 #include <behaviors.dtsi>
