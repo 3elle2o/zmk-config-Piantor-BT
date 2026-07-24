@@ -16,7 +16,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA KP_DOT>; };
+&num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
 
 &caps_word { continue-list = <SPACE>; };
 
@@ -43,7 +43,7 @@
     nav_word: nav_word {
         compatible = "zmk,behavior-auto-layer";
         #binding-cells = <1>;
-        continue-list = <LG(T) LG(DOWN_ARROW) LG(UP_ARROW) LG(LEFT_ARROW) LG(RIGHT_ARROW) LC(LS(LEFT_ARROW)) LC(LS(RIGHT_ARROW)) LEFT_ARROW UP_ARROW RIGHT_ARROW DOWN_ARROW>;
+        continue-list = <UP LEFT_ALT LEFT_GUI LEFT_CONTROL LEFT_SHIFT LEFT_ARROW RIGHT TAB DOWN>;
         ignore-modifiers;
     };
 
@@ -160,7 +160,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &mo 5  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp ESC  &none  &none  &kp DEL  &schiftnum 2 LEFT_SHIFT  &sl 3  &nav_word  &none
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &mo 5  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp ESC  &none  &none  &kp DEL  &schiftnum 2 LEFT_SHIFT  &sl 3  &nav_word 2  &none
             >;
         };
 
