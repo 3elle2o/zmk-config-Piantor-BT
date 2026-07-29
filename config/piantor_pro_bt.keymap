@@ -153,7 +153,7 @@
         };
 
         mau {
-            bindings = <&mau_word 4>;
+            bindings = <&nav_word>;
             key-positions = <33 21>;
         };
 
@@ -177,7 +177,7 @@
         FRECCE {
             display-name = "FRECCE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &kp LEFT_ARROW  &kp UP  &kp RIGHT  &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &kp TAB  &kp LEFT_ARROW  &kp RIGHT  &kp UP  &kp DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
