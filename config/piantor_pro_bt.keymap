@@ -104,6 +104,16 @@
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
         };
+
+        simb_nav: simb_nav {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SIMB_NAV";
+            bindings = <&sl>, <&mo>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -160,7 +170,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &mo 5  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp ESC  &none  &none  &kp DEL  &schiftnum 2 LEFT_SHIFT  &sl 3  &nav_word 1  &none
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &mo 5  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp ESC  &none  &none  &kp DEL  &schiftnum 2 LEFT_SHIFT  &simb_nav 1 3  &mau_word  &none
             >;
         };
 
