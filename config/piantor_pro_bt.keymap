@@ -99,7 +99,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SIMB_FRECCE";
             #binding-cells = <0>;
-            bindings = <&sl 3>, <&nav_word>;
+            bindings = <&sl 3>, <&nav_word 1>;
 
             tapping-term-ms = <150>;
         };
