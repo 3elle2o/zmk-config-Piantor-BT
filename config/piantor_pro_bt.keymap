@@ -60,6 +60,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             bindings = <&mo>, <&sl>;
+
             display-name = "Mod-Tap";
             flavor = "tap-preferred";
         };
@@ -69,15 +70,17 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             bindings = <&sk>, <&kp>;
+
             display-name = "modificatori";
             flavor = "tap-preferred";
-
         };
+
         schiftnum: schiftnum {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             display-name = "SCHIFTNUM";
             bindings = <&mo>, <&sk>;
+
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
@@ -90,6 +93,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
+        };
+
+        simb_frecce: simb_frecce {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SIMB_FRECCE";
+            #binding-cells = <0>;
+            bindings = <&sl 3>, <&nav_word>;
+
+            tapping-term-ms = <150>;
         };
     };
 
@@ -147,14 +159,14 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &mo 5  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp ESC  &none  &none  &kp DEL  &schiftnum 2 LEFT_SHIFT  &mod_tap 1 3  &mau_word 4  &none
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &mo 5  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp ESC  &none  &none  &kp DEL  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &mau_word 4  &none
             >;
         };
 
         FRECCE {
             display-name = "FRECCE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &kp TAB  &kp LEFT_ARROW  &kp RIGHT  &kp UP  &kp DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UP  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &kp LEFT_ARROW  &kp TAB  &kp RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -175,7 +187,7 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &msc SCRL_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &mkp MB2  &mkp MB3  &mkp MB1  &msc SCRL_RIGHT  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none  &none  &mmv MOVE_DOWN  &trans  &trans
+&trans  &trans  &trans  &trans  &msc SCRL_UP  &trans  &trans  &trans  &mmv MOVE_UP  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &mkp MB2  &mkp MB3  &mkp MB1  &msc SCRL_RIGHT  &trans  &mmv MOVE_LEFT  &trans  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_DOWN  &trans  &trans  &trans  &mmv MOVE_DOWN  &trans  &trans  &trans  &trans  &none  &none  &mmv MOVE_DOWN  &trans  &trans
             >;
         };
 
