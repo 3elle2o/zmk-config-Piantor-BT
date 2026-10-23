@@ -103,6 +103,15 @@
 
             tapping-term-ms = <250>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&mkp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -159,7 +168,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &mkp RCLK  &kp U  &kp I  &kp O  &mo 5  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &mkp LCLK  &kp M  &kp COMMA  &kp DOT  &kp ESC  &none  &none  &kp DEL  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &mau_word 4  &none
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &mkp RCLK  &kp U  &kp I  &kp O  &mo 5  &none  &none  &kp A  &kp S  &kp D  &kp F  &kp G  &new_behavior MCLK CLCK  &kp J  &kp K  &kp L  &kp P  &none  &none  &modificatori LCTRL Z  &kp X  &kp C  &kp V  &kp B  &mkp LCLK  &kp M  &kp COMMA  &kp DOT  &kp ESC  &none  &none  &kp DEL  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &mau_word 4  &none
             >;
         };
 
